@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <string>
+#include <Windows.h>
 struct bank
 {
     int number;
@@ -15,6 +16,7 @@ void change(bank& t, double p)
 int main(int argc, char** argv)
 {
     setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
     int num{};
     double s{};
     std::string nam{};
