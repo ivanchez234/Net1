@@ -1,24 +1,29 @@
-# Игнорировать папку .vs (Visual Studio)
+# Исключить build директории
+*.sln.iml
+*.vcxproj.user
+
+# Директории для игнорирования
 .vs/
-
-# Игнорировать файлы предкомпилированных заголовков
-*.ipch
-*.pch
-
-# Игнорировать временные файлы
-*.tmp
-*.temp
-
-# Игнорировать папки сборки
+x64/
 Debug/
 Release/
-x64/
-x86/
-bin/
-obj/
+ipch/
+*.tlog/
+*.log
+*.idb
+*.pdb
+*.ilk
+*.cache
+*.obj
+*.pch
+*.res
+*.ilk
+*.meta
+Thumbs.db
 
-# Игнорировать файлы пользователя
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
+# Но сохранить следующие файлы (исключения из правил выше)
+!Net1.cpp
+!Net1.sln
+!Net1.vcxproj
+!Net1.vcxproj.filters
+!Net1.vcxproj.user
