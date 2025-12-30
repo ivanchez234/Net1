@@ -1,19 +1,20 @@
 ﻿#include <iostream>
 #include <string>
-enum class mounths
+
+enum class months
 {
-    Январь = 1,
-    Февраль,
-    Март,
-    Апрель,
-    Май,
-    Июнь,
-    Июль,
-    Август,
-    Сентябрь,
-    Октябрь,
-    Ноябрь,
-    Декабрь
+    January = 1,
+    February,
+    March,
+    April,
+    May,
+    June,
+    July,
+    August,
+    September,
+    October,
+    November,
+    December
 };
 int main(int argc, char** argv)
 {
@@ -30,52 +31,48 @@ int main(int argc, char** argv)
             std::cout << "До свидания" << std::endl;
         }
 
-        switch (static_cast<mounths>(n))
+        switch (static_cast<months>(n))
         {
-        case mounths::Январь:
+        case months::January:
             std::cout << "Январь" << std::endl;
             break;
-        case mounths::Февраль:
+        case months::February:
             std::cout << "Февраль" << std::endl;
             break;
-        case mounths::Март:
+        case months::March:
             std::cout << "Март" << std::endl;
             break;
-        case mounths::Апрель:
+        case months::April:
             std::cout << "Апрель" << std::endl;
             break;
-        case mounths::Май:
+        case months::May:
             std::cout << "Май" << std::endl;
             break;
-        case mounths::Июнь:
+        case months::June:
             std::cout << "Июнь" << std::endl;
             break;
-        case mounths::Июль:
+        case months::July:
             std::cout << "Июль" << std::endl;
             break;
-        case mounths::Август:
+        case months::August:
             std::cout << "Август" << std::endl;
             break;
-        case mounths::Сентябрь:
+        case months::September:
             std::cout << "Сентябрь" << std::endl;
             break;
-        case mounths::Октябрь:
+        case months::October:
             std::cout << "Октябрь" << std::endl;
             break;
-
-        case mounths::Ноябрь:
+        case months::November:
             std::cout << "Ноябрь" << std::endl;
             break;
-
-
-        case mounths::Декабрь:
+        case months::December:
             std::cout << "Декабрь" << std::endl;
             break;
-
-
-
-
+        default:
+            
         }
     } while (n != 0);
-}
 
+    return 0;
+}

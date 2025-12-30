@@ -1,41 +1,24 @@
-# Prerequisites
-*.d
+# Игнорировать папку .vs (Visual Studio)
+.vs/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
+# Игнорировать файлы предкомпилированных заголовков
+*.ipch
 *.pch
 
-# Linker files
-*.ilk
+# Игнорировать временные файлы
+*.tmp
+*.temp
 
-# Debugger Files
-*.pdb
+# Игнорировать папки сборки
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+# Игнорировать файлы пользователя
+*.user
+*.suo
+*.userosscache
+*.sln.docstates

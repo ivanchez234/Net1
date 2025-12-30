@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <string>
+
 struct adress
 {
     std::string town;
@@ -8,24 +9,28 @@ struct adress
     int flat;
     int index;
 };
+
+void printAddress(const adress& address)
+{
+    std::cout << "Город: " << address.town << std::endl;
+    std::cout << "Улица: " << address.name << std::endl;
+    std::cout << "Номер дома: " << address.home << std::endl;
+    std::cout << "Номер квартиры: " << address.flat << std::endl;
+    std::cout << "Индекс: " << address.index << std::endl;
+}
+
 int main(int argc, char** argv)
 {
     setlocale(LC_ALL, "Russian");
-    adress n1 = { "Москва","Арбат",12,8,13456 };
-    adress n2 = { "Ижевск","Пушкина",59,143,953769 };
-    std::cout << "Город: " << n1.town << std::endl;
-    std::cout << "Улица: " << n1.name << std::endl;
-    std::cout << "Номер дома: " << n1.home << std::endl;
-    std::cout << "Номер квартиры: " << n1.flat << std::endl;
-    std::cout << "Индекс: " << n1.index << std::endl;
+
+    adress n1 = { "Москва", "Арбат", 12, 8, 13456 };
+    adress n2 = { "Ижевск", "Пушкина", 59, 143, 953769 };
+    
+    printAddress(n1);
 
     std::cout << std::endl;
 
-    std::cout << "Город: " << n2.town << std::endl;
-    std::cout << "Улица: " << n2.name << std::endl;
-    std::cout << "Номер дома: " << n2.home << std::endl;
-    std::cout << "Номер квартиры: " << n2.flat << std::endl;
-    std::cout << "Индекс: " << n2.index << std::endl;
+    printAddress(n2);
 
     return 0;
 }
