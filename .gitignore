@@ -1,25 +1,23 @@
-# Visual Studio файлы
-**/.vs/
-**/ipch/
-**/*.ipch
-**/*.sdf
-**/*.suo
-**/*.opensdf
-**/*.user
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Директории сборки
+# Build directories
+**/x64/
 **/Debug/
 **/Release/
-**/x64/
-**/x86/
-.vs/Net1/
-Net1/x64/Debug/
+x64/
+Debug/
+Release/
 
-# Временные файлы
-**/*.obj
-**/*.pdb
-**/*.ilk
-**/*.log
-**/*.tlog
-**/*.idb
-**/*.pch
+# Don't ignore project files
+!*.cpp
+!*.h
+!*.hpp
+!*.sln
+!*.vcxproj
+!*.vcxproj.filters
+!*.vcxproj.user
