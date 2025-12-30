@@ -1,29 +1,30 @@
-# Исключить build директории
-*.sln.iml
-*.vcxproj.user
+# Игнорировать всё в корне и поддиректориях
+/*
 
-# Директории для игнорирования
-.vs/
-x64/
-Debug/
-Release/
-ipch/
-*.tlog/
-*.log
-*.idb
-*.pdb
-*.ilk
-*.cache
-*.obj
-*.pch
-*.res
-*.ilk
-*.meta
-Thumbs.db
+# Но разрешить сами директории проектов (чтобы они не игнорировались)
+!Net1/
+!Net2/
+!Net3/
 
-# Но сохранить следующие файлы (исключения из правил выше)
-!Net1.cpp
-!Net1.sln
-!Net1.vcxproj
-!Net1.vcxproj.filters
-!Net1.vcxproj.user
+# Разрешить файлы проектов внутри этих директорий
+!Net1/Net1.cpp
+!Net1/Net1.sln
+!Net1/Net1.vcxproj
+!Net1/Net1.vcxproj.filters
+!Net1/Net1.vcxproj.user
+
+!Net2/Net2.cpp
+!Net2/Net2.sln
+!Net2/Net2.vcxproj
+!Net2/Net2.vcxproj.filters
+!Net2/Net2.vcxproj.user
+
+!Net3/Net3.cpp
+!Net3/Net3.sln
+!Net3/Net3.vcxproj
+!Net3/Net3.vcxproj.filters
+!Net3/Net3.vcxproj.user
+
+# Разрешить корневые файлы
+!/.gitignore
+!/README.md
